@@ -1,0 +1,25 @@
+.loading-img{
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1040;
+    display: table;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+}
+.loading-img-vis{
+	visibility: visible;
+}
+.loading-img .inner-div{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.loading-img img{
+    width: 70px;
+}

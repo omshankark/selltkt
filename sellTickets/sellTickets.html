@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="msapplication-tap-highlight" content="no"/>
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
+	<link rel="stylesheet" href="../css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="../css/font-awesome-4.0.3/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="../css/custom.css"/>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div  ng-app="sellTickets"><br/><br/><br/>
+		<a ng-click="next('summary')">Summary</a>
+		<a ng-click="next('tickets')">Tickets</a>
+		<a ng-click="next('transactions')">Transactions</a>
+
+		<div ng-view></div>
+		
+		<div class="loading-img" ng-class="{'loading-img-vis':haveLoading}">
+		  <div class="inner-div">
+		    <div class="text-center">
+		      <img src="../img/giphy.gif" alt="load" />
+		    </div>
+		  </div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../cordova.js"></script>
+
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/angular-route.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/provider.js"></script>
+<script type="text/javascript" src="js/summary.ctrl.js"></script>
+<script type="text/javascript" src="js/tickets.ctrl.js"></script>
+<script type="text/javascript" src="js/transactions.ctrl.js"></script>
+
+</html>
